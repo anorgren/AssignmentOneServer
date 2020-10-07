@@ -7,7 +7,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iZE5ZbKuosgw2TTiZuBgkbgSUi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -17,6 +21,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -40,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602106530914</updated>
-      <workItem from="1602106535317" duration="227000" />
+      <workItem from="1602106535317" duration="432000" />
     </task>
     <servers />
   </component>
@@ -52,5 +59,9 @@
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state x="553" y="245" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602106775250" />
+    <state x="427" y="131" key="SettingsEditor" timestamp="1602107105177">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state x="427" y="131" key="SettingsEditor/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602107105177" />
   </component>
 </project>
