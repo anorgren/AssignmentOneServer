@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SkiServer:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9335710d-444e-4334-9eb3-cc670a5dc101" name="Default Changelist" comment="" />
+    <list default="true" id="9335710d-444e-4334-9eb3-cc670a5dc101" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SkierServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SkierServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SkiServer" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="1iZE5ZbKuosgw2TTiZuBgkbgSUi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,12 +54,249 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RunManager" selected="Tomcat Server.AssnOne">
+    <configuration name="AssnOne" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="SkiServer:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SkiServer" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60081" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SkiServer:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Test1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="SkiServer:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SkiServer_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SkiServer_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60081" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SkiServer:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SkiServer:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SkiServer_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_SkiServer" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60081" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SkiServer:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.AssnOne" />
+      <item itemvalue="Tomcat Server.Test1" />
+    </list>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -47,7 +313,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602106530914</updated>
-      <workItem from="1602106535317" duration="432000" />
+      <workItem from="1602106535317" duration="13496000" />
+      <workItem from="1602134620499" duration="2842000" />
+      <workItem from="1602219139803" duration="614000" />
+      <workItem from="1602219835999" duration="9987000" />
     </task>
     <servers />
   </component>
@@ -55,13 +324,86 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="356" y="225" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602446067042">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state x="356" y="233" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602441828342" />
+    <state x="356" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602446067042" />
     <state x="553" y="245" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1602106775250">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state x="553" y="245" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602106775250" />
-    <state x="427" y="131" key="SettingsEditor" timestamp="1602107105177">
+    <state x="491" y="250" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1602135439425">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="491" y="250" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602135439425" />
+    <state width="1198" height="254" key="GridCell.Tab.0.bottom" timestamp="1602464228626">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
-    <state x="427" y="131" key="SettingsEditor/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602107105177" />
+    <state width="1198" height="201" key="GridCell.Tab.0.bottom/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786110" />
+    <state width="1198" height="254" key="GridCell.Tab.0.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228626" />
+    <state width="1198" height="254" key="GridCell.Tab.0.center" timestamp="1602464228625">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.0.center/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786109" />
+    <state width="1198" height="254" key="GridCell.Tab.0.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228625" />
+    <state width="1198" height="254" key="GridCell.Tab.0.left" timestamp="1602464228624">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.0.left/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786108" />
+    <state width="1198" height="254" key="GridCell.Tab.0.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228624" />
+    <state width="1198" height="254" key="GridCell.Tab.0.right" timestamp="1602464228625">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.0.right/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786109" />
+    <state width="1198" height="254" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228625" />
+    <state width="1198" height="254" key="GridCell.Tab.1.bottom" timestamp="1602464228543">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.1.bottom/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786029" />
+    <state width="1198" height="254" key="GridCell.Tab.1.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228543" />
+    <state width="1198" height="254" key="GridCell.Tab.1.center" timestamp="1602464228543">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.1.center/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786028" />
+    <state width="1198" height="254" key="GridCell.Tab.1.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228543" />
+    <state width="1198" height="254" key="GridCell.Tab.1.left" timestamp="1602464228542">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.1.left/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786027" />
+    <state width="1198" height="254" key="GridCell.Tab.1.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228542" />
+    <state width="1198" height="254" key="GridCell.Tab.1.right" timestamp="1602464228543">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.1.right/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786028" />
+    <state width="1198" height="254" key="GridCell.Tab.1.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228543" />
+    <state width="1198" height="254" key="GridCell.Tab.2.bottom" timestamp="1602464228545">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.2.bottom/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786030" />
+    <state width="1198" height="254" key="GridCell.Tab.2.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228545" />
+    <state width="1198" height="254" key="GridCell.Tab.2.center" timestamp="1602464228544">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.2.center/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786029" />
+    <state width="1198" height="254" key="GridCell.Tab.2.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228544" />
+    <state width="1198" height="254" key="GridCell.Tab.2.left" timestamp="1602464228544">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.2.left/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786029" />
+    <state width="1198" height="254" key="GridCell.Tab.2.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228544" />
+    <state width="1198" height="254" key="GridCell.Tab.2.right" timestamp="1602464228545">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state width="1198" height="201" key="GridCell.Tab.2.right/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786029" />
+    <state width="1198" height="254" key="GridCell.Tab.2.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228545" />
+    <state x="427" y="131" key="SettingsEditor" timestamp="1602219853482">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state x="427" y="131" key="SettingsEditor/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602219853482" />
+    <state x="556" y="257" key="search.everywhere.popup" timestamp="1602218075479">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state x="556" y="257" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602218075479" />
   </component>
 </project>
