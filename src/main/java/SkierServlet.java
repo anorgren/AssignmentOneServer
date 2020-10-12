@@ -16,7 +16,7 @@ public class SkierServlet extends HttpServlet {
     private final String GET_PATH_VERTICAL = "vertical";
     private final String RESORT_PARAM = "resort";
     private final String MISSING_RESORT_PARAM_MSG = "{ \"message\": \"Invalid Params\" }";
-    private final String TOTAL_VERT_SUCCESS_MSG = "{ \"Test\": \"Baeldung\", \"java\": true }";
+    private final String TOTAL_VERT_SUCCESS_MSG = "{\"resort\": \" %1$s\",\"totalVertical\": %2$d}";
     private final int GET_RESORT_DAY_SKIER_MAX_ELEMENTS = 6;
     private final int GET_VERTICAL_MAX_ELEMENTS = 3;
     private final int MIN_NUM_ELEMENTS_IN_LIFTRIDES_ENDPOINT = 2;

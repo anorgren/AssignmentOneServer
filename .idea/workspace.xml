@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SkiServer:war exploded" />
+      <artifact name="SkiServerWar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9335710d-444e-4334-9eb3-cc670a5dc101" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SkiServer_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SkierServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SkierServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +51,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Tomcat Server.AssnOne">
     <configuration name="AssnOne" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.34" ALTERNATIVE_JRE_ENABLED="false">
@@ -60,7 +61,7 @@
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="SkiServer:war exploded">
+        <artifact name="SkiServerWar">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -125,7 +126,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="SkiServer:war exploded" />
+          <artifact name="SkiServerWar" />
         </option>
       </method>
     </configuration>
@@ -134,7 +135,7 @@
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="SkiServer:war exploded">
+        <artifact name="SkiServerWar">
           <settings>
             <option name="CONTEXT_PATH" value="/SkiServer_war_exploded" />
           </settings>
@@ -199,7 +200,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="SkiServer:war exploded" />
+          <artifact name="SkiServerWar" />
         </option>
       </method>
     </configuration>
@@ -207,7 +208,7 @@
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="SkiServer:war exploded">
+        <artifact name="SkiServerWar">
           <settings>
             <option name="CONTEXT_PATH" value="/SkiServer_war_exploded" />
           </settings>
@@ -272,7 +273,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="SkiServer:war exploded" />
+          <artifact name="SkiServerWar" />
         </option>
       </method>
     </configuration>
@@ -294,7 +295,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -316,7 +317,7 @@
       <workItem from="1602106535317" duration="13496000" />
       <workItem from="1602134620499" duration="2842000" />
       <workItem from="1602219139803" duration="614000" />
-      <workItem from="1602219835999" duration="9987000" />
+      <workItem from="1602219835999" duration="14910000" />
     </task>
     <servers />
   </component>
@@ -324,6 +325,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="491" y="215" key="#Project_Structure" timestamp="1602469836402">
+      <screen x="0" y="23" width="1792" height="1054" />
+    </state>
+    <state x="491" y="215" key="#Project_Structure/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602469836402" />
     <state x="356" y="225" width="1071" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602446067042">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
@@ -337,70 +342,70 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="491" y="250" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602135439425" />
-    <state width="1198" height="254" key="GridCell.Tab.0.bottom" timestamp="1602464228626">
+    <state width="1198" height="254" key="GridCell.Tab.0.bottom" timestamp="1602488333832">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.0.bottom/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786110" />
-    <state width="1198" height="254" key="GridCell.Tab.0.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228626" />
-    <state width="1198" height="254" key="GridCell.Tab.0.center" timestamp="1602464228625">
+    <state width="1198" height="254" key="GridCell.Tab.0.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333832" />
+    <state width="1198" height="254" key="GridCell.Tab.0.center" timestamp="1602488333831">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.0.center/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786109" />
-    <state width="1198" height="254" key="GridCell.Tab.0.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228625" />
-    <state width="1198" height="254" key="GridCell.Tab.0.left" timestamp="1602464228624">
+    <state width="1198" height="254" key="GridCell.Tab.0.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333831" />
+    <state width="1198" height="254" key="GridCell.Tab.0.left" timestamp="1602488333831">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.0.left/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786108" />
-    <state width="1198" height="254" key="GridCell.Tab.0.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228624" />
-    <state width="1198" height="254" key="GridCell.Tab.0.right" timestamp="1602464228625">
+    <state width="1198" height="254" key="GridCell.Tab.0.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333831" />
+    <state width="1198" height="254" key="GridCell.Tab.0.right" timestamp="1602488333831">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.0.right/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786109" />
-    <state width="1198" height="254" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228625" />
-    <state width="1198" height="254" key="GridCell.Tab.1.bottom" timestamp="1602464228543">
+    <state width="1198" height="254" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333831" />
+    <state width="1198" height="254" key="GridCell.Tab.1.bottom" timestamp="1602488333833">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.1.bottom/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786029" />
-    <state width="1198" height="254" key="GridCell.Tab.1.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228543" />
-    <state width="1198" height="254" key="GridCell.Tab.1.center" timestamp="1602464228543">
+    <state width="1198" height="254" key="GridCell.Tab.1.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333833" />
+    <state width="1198" height="254" key="GridCell.Tab.1.center" timestamp="1602488333832">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.1.center/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786028" />
-    <state width="1198" height="254" key="GridCell.Tab.1.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228543" />
-    <state width="1198" height="254" key="GridCell.Tab.1.left" timestamp="1602464228542">
+    <state width="1198" height="254" key="GridCell.Tab.1.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333832" />
+    <state width="1198" height="254" key="GridCell.Tab.1.left" timestamp="1602488333832">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.1.left/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786027" />
-    <state width="1198" height="254" key="GridCell.Tab.1.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228542" />
-    <state width="1198" height="254" key="GridCell.Tab.1.right" timestamp="1602464228543">
+    <state width="1198" height="254" key="GridCell.Tab.1.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333832" />
+    <state width="1198" height="254" key="GridCell.Tab.1.right" timestamp="1602488333833">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.1.right/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786028" />
-    <state width="1198" height="254" key="GridCell.Tab.1.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228543" />
-    <state width="1198" height="254" key="GridCell.Tab.2.bottom" timestamp="1602464228545">
+    <state width="1198" height="254" key="GridCell.Tab.1.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333833" />
+    <state width="1198" height="254" key="GridCell.Tab.2.bottom" timestamp="1602488333834">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.2.bottom/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786030" />
-    <state width="1198" height="254" key="GridCell.Tab.2.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228545" />
-    <state width="1198" height="254" key="GridCell.Tab.2.center" timestamp="1602464228544">
+    <state width="1198" height="254" key="GridCell.Tab.2.bottom/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333834" />
+    <state width="1198" height="254" key="GridCell.Tab.2.center" timestamp="1602488333833">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.2.center/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786029" />
-    <state width="1198" height="254" key="GridCell.Tab.2.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228544" />
-    <state width="1198" height="254" key="GridCell.Tab.2.left" timestamp="1602464228544">
+    <state width="1198" height="254" key="GridCell.Tab.2.center/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333833" />
+    <state width="1198" height="254" key="GridCell.Tab.2.left" timestamp="1602488333833">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.2.left/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786029" />
-    <state width="1198" height="254" key="GridCell.Tab.2.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228544" />
-    <state width="1198" height="254" key="GridCell.Tab.2.right" timestamp="1602464228545">
+    <state width="1198" height="254" key="GridCell.Tab.2.left/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333833" />
+    <state width="1198" height="254" key="GridCell.Tab.2.right" timestamp="1602488333833">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
     <state width="1198" height="201" key="GridCell.Tab.2.right/1792.23.2560.1374/0.23.1792.1097@0.23.1792.1097" timestamp="1602442786029" />
-    <state width="1198" height="254" key="GridCell.Tab.2.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602464228545" />
-    <state x="427" y="131" key="SettingsEditor" timestamp="1602219853482">
+    <state width="1198" height="254" key="GridCell.Tab.2.right/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602488333833" />
+    <state x="427" y="131" key="SettingsEditor" timestamp="1602468263162">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
-    <state x="427" y="131" key="SettingsEditor/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602219853482" />
+    <state x="427" y="131" key="SettingsEditor/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602468263162" />
     <state x="556" y="257" key="search.everywhere.popup" timestamp="1602218075479">
       <screen x="0" y="23" width="1792" height="1054" />
     </state>
