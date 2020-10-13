@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9335710d-444e-4334-9eb3-cc670a5dc101" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SkiServer_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ResortServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ResortServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SkierServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SkierServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -317,7 +315,7 @@
       <workItem from="1602106535317" duration="13496000" />
       <workItem from="1602134620499" duration="2842000" />
       <workItem from="1602219139803" duration="614000" />
-      <workItem from="1602219835999" duration="14910000" />
+      <workItem from="1602219835999" duration="15212000" />
     </task>
     <servers />
   </component>

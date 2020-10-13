@@ -13,6 +13,8 @@ public class ResortServlet extends HttpServlet {
     private final String URL_TOP_TEN = "top10vert";
     private final String DUMMY_TOP_TEN = "{\"topTenSkiers\": [{\"skierID\": 1231, " +
             "\"verticalTotal\": 1777}, {\"skierID\": 222, \"verticalTotal\": 23423}]}";
+    private final int DAY_PATH_LOC = 1;
+    private final int TOP_TEN_PATH_LOC = 3;
 
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
@@ -40,7 +42,7 @@ public class ResortServlet extends HttpServlet {
 
     private boolean isTopTenPath(String[] pathElements) {
         return pathElements.length >= 3
-                && pathElements[1].equals(URL_DAY)
-                && pathElements[3].equals(URL_TOP_TEN);
+                && pathElements[DAY_PATH_LOC].equals(URL_DAY)
+                && pathElements[TOP_TEN_PATH_LOC].equals(URL_TOP_TEN);
     }
 }

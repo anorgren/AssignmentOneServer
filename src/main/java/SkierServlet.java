@@ -59,13 +59,13 @@ public class SkierServlet extends HttpServlet {
         }
     }
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
         Optional<String[]> possiblePath = ServletUtil.processRequest(req, res);
         if (possiblePath.isPresent()) {
             String[] pathElements = possiblePath.get();
 
             if (isTotalVerticalPath(pathElements)) {
-                handleResortParam(req, res, pathElements);
+                handleResortParam(req, res);
             } else if (isVerticalForResortDayPath(pathElements)) {
                 handleResortDaySkierParams(res, pathElements);
             }
@@ -75,7 +75,7 @@ public class SkierServlet extends HttpServlet {
         }
     }
 
-    private void handleResortParam(HttpServletRequest req, HttpServletResponse res, String[] pathElements)
+    private void handleResortParam(HttpServletRequest req, HttpServletResponse res)
             throws IOException {
         String resortParam = req.getParameter(RESORT_PARAM);
         if (resortParam == null || resortParam.isEmpty()) {
