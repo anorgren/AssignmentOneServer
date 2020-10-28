@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="SkiServerWar">
-    <output-path>$PROJECT_DIR$/out/artifacts/SkiServerWar</output-path>
+    <output-path>$PROJECT_DIR$/../../DistributedSystems/SkiServerWar</output-path>
     <root id="archive" name="SkiServerWar.war">
       <element id="javaee-facet-resources" facet="SkiServer/web/Web" />
       <element id="directory" name="WEB-INF">

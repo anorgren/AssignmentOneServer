@@ -7,10 +7,10 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 public class LiftRide {
-    private String skierId;
-    private String liftId;
-    private String resortId;
-    private String dayId;
+    private String skierID;
+    private String liftID;
+    private String resortID;
+    private String dayID;
     private int vertical;
     private String time;
 }

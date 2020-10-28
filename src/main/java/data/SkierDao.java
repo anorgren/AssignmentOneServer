@@ -18,10 +18,10 @@ public class SkierDao {
         try (Connection connection = DataSource.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(insertSQLStatement)) {
 
-            preparedStatement.setString(1, liftRide.getResortId());
-            preparedStatement.setString(2, liftRide.getLiftId());
-            preparedStatement.setString(3, liftRide.getSkierId());
-            preparedStatement.setString(4, liftRide.getDayId());
+            preparedStatement.setString(1, liftRide.getResortID());
+            preparedStatement.setString(2, liftRide.getLiftID());
+            preparedStatement.setString(3, liftRide.getSkierID());
+            preparedStatement.setString(4, liftRide.getDayID());
             preparedStatement.setString(5, liftRide.getTime());
             preparedStatement.setInt(6, liftRide.getVertical());
 

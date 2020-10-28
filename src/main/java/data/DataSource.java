@@ -16,7 +16,7 @@ public class DataSource {
     private static final String DB_DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 
     private static final int CORE_COUNT = Runtime.getRuntime().availableProcessors();
-    private static final int POOL_SIZE = CORE_COUNT * 2 + 1;
+    private static final int POOL_SIZE = Math.max(CORE_COUNT * 2 + 1, 20);
     private static final int MIN_IDLE_TIME = 5;
 
 

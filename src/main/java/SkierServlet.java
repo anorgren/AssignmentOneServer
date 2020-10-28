@@ -151,7 +151,7 @@ public class SkierServlet extends HttpServlet {
     }
 
     private int calculateVertical(LiftRide liftRide) {
-        return Integer.parseInt(liftRide.getLiftId()) * VERTICAL_MULTIPLIER;
+        return Integer.parseInt(liftRide.getLiftID()) * VERTICAL_MULTIPLIER;
     }
 
     private void handleGetResponse(HttpServletResponse res, SkierVertical skierVertical) throws IOException {
