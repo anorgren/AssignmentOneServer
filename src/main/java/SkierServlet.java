@@ -1,4 +1,10 @@
 import com.google.gson.Gson;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.MessageProperties;
+import org.apache.commons.pool2.ObjectPool;
+import org.apache.commons.pool2.impl.GenericObjectPool;
 import data.SkierDao;
 import data.model.LiftRide;
 import data.model.SkierVertical;
@@ -27,6 +33,39 @@ public class SkierServlet extends HttpServlet {
     private final int GET_VERTICAL_MAX_ELEMENTS = 3;
     private final int MIN_NUM_ELEMENTS_IN_LIFTRIDES_ENDPOINT = 2;
     private int VERTICAL_MULTIPLIER = 10;
+    private final String QUEUE_NAME = "SKIER_WRITE_QUEUE";
+
+    private final SkierDao skierDao = new SkierDao();
+    private Connection queueConnection;
+    private ObjectPool<Channel> channelPool;
+
+    public void init() throws ServletException {
+        super.init();
+        try {
+            ConnectionFactory connectionFactory = new ConnectionFactory();
+            // TODO: Set to actual adresss
+            connectionFactory.setHost("localhost");
+//        connectionFactory.setPort(5672);
+//        connectionFactory.setUsername("public");
+//        connectionFactory.setPassword("password");
+
+            queueConnection = connectionFactory.newConnection();
+        } catch (Exception e) {
+            System.err.println("Unable to establish connection");
+            e.printStackTrace();
+        }
+    }
+
+    public void destroy() {
+        try {
+            super.destroy();
+            queueConnection.close();
+            channelPool.close();
+        } catch (Exception e) {
+            System.err.println("Unable to destroy");
+            e.printStackTrace();
+        }
+    }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
@@ -39,12 +78,19 @@ public class SkierServlet extends HttpServlet {
 
                 String reqBody = req.getReader().lines().collect(Collectors.joining());
                 LiftRide liftRide = convertPostBodyToLiftRideObject(reqBody);
+                String postMessage = createPostMessage(liftRide);
 
-                boolean successfullyPosted = (new SkierDao()).insertLiftRide(liftRide);
+                try {
+                    Channel channel = channelPool.borrowObject();
 
-                if (successfullyPosted) {
+                    channel.basicPublish("",
+                            QUEUE_NAME,
+                            MessageProperties.PERSISTENT_TEXT_PLAIN,
+                            postMessage.getBytes());
+
+                    channelPool.returnObject(channel);
                     successfulPostBehavior(req, res);
-                } else {
+                } catch (Exception e) {
                     res.setStatus(HttpServletResponse.SC_BAD_GATEWAY);
                 }
             } else {
@@ -53,6 +99,16 @@ public class SkierServlet extends HttpServlet {
         } else {
             res.sendError(HttpServletResponse.SC_NOT_FOUND, ServletUtil.EMPTY_PATH_STATUS_MSG);
         }
+    }
+
+    private String createPostMessage(LiftRide liftRide) {
+        return String.format("%s,%s,%s,%s,%s,%d",
+                liftRide.getResortID(),
+                liftRide.getDayID(),
+                liftRide.getSkierID(),
+                liftRide.getTime(),
+                liftRide.getLiftID(),
+                liftRide.getVertical());
     }
 
     private boolean hasValidPostEndpoint(String[] pathElements) {
