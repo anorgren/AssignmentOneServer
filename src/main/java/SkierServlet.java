@@ -33,9 +33,13 @@ public class SkierServlet extends HttpServlet {
     private final int GET_VERTICAL_MAX_ELEMENTS = 3;
     private final int MIN_NUM_ELEMENTS_IN_LIFTRIDES_ENDPOINT = 2;
     private int VERTICAL_MULTIPLIER = 10;
-    private final String QUEUE_NAME = "SKIER_WRITE_QUEUE";
+    private final String QUEUE_NAME_PERSISTENT = "SKIER_WRITE_QUEUE_PERSISTENT2";
+    private final String QUEUE_NAME_NOT_PERSISTENT = "SKIER_WRITE_QUEUE_NOT_PERSISTENT";
+    private static final String HOST = "amqps://b-e8c5ee0c-9e15-4aa0-b491-9fcbe7800bb5.mq.us-west-2.amazonaws.com:5671";
 
-    private final SkierDao skierDao = new SkierDao();
+
+
+//    private final SkierDao skierDao = new SkierDao();
     private Connection queueConnection;
     private ObjectPool<Channel> channelPool;
 
@@ -43,22 +47,23 @@ public class SkierServlet extends HttpServlet {
         super.init();
         try {
             ConnectionFactory connectionFactory = new ConnectionFactory();
-            // TODO: Set to actual adresss
-            connectionFactory.setHost("localhost");
-//        connectionFactory.setPort(5672);
-//        connectionFactory.setUsername("public");
-//        connectionFactory.setPassword("password");
+            connectionFactory.setUri(HOST);
+            connectionFactory.setPort(5671);
+            connectionFactory.setUsername("admin");
+            connectionFactory.setPassword("password12345");
 
             queueConnection = connectionFactory.newConnection();
         } catch (Exception e) {
             System.err.println("Unable to establish connection");
             e.printStackTrace();
         }
+
+        channelPool = new GenericObjectPool<>(new ChannelFactory(QUEUE_NAME_NOT_PERSISTENT, queueConnection));
     }
 
     public void destroy() {
+        super.destroy();
         try {
-            super.destroy();
             queueConnection.close();
             channelPool.close();
         } catch (Exception e) {
@@ -68,7 +73,7 @@ public class SkierServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
-            throws ServletException, IOException {
+            throws IOException {
 
         Optional<String[]> possiblePath = ServletUtil.processRequest(req, res);
 
@@ -78,13 +83,14 @@ public class SkierServlet extends HttpServlet {
 
                 String reqBody = req.getReader().lines().collect(Collectors.joining());
                 LiftRide liftRide = convertPostBodyToLiftRideObject(reqBody);
+
                 String postMessage = createPostMessage(liftRide);
 
                 try {
                     Channel channel = channelPool.borrowObject();
 
                     channel.basicPublish("",
-                            QUEUE_NAME,
+                            QUEUE_NAME_NOT_PERSISTENT,
                             MessageProperties.PERSISTENT_TEXT_PLAIN,
                             postMessage.getBytes());
 
@@ -106,7 +112,7 @@ public class SkierServlet extends HttpServlet {
                 liftRide.getResortID(),
                 liftRide.getDayID(),
                 liftRide.getSkierID(),
-                liftRide.getTime(),
+                liftRide.getTime().substring(0, Math.min(liftRide.getTime().length(), 16)),
                 liftRide.getLiftID(),
                 liftRide.getVertical());
     }
@@ -199,7 +205,6 @@ public class SkierServlet extends HttpServlet {
 
     private LiftRide convertPostBodyToLiftRideObject(String jsonBody) {
         Gson gson = new Gson();
-
         LiftRide liftRide = gson.fromJson(jsonBody, LiftRide.class);
         liftRide.setVertical(calculateVertical(liftRide));
 

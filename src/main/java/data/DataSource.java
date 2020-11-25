@@ -16,7 +16,7 @@ public class DataSource {
     private static final String DB_DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 
     private static final int CORE_COUNT = Runtime.getRuntime().availableProcessors();
-    private static final int POOL_SIZE = Math.max(CORE_COUNT * 2 + 1, 20);
+    private static final int POOL_SIZE = 50;
     private static final int MIN_IDLE_TIME = 5;
 
 
@@ -39,7 +39,7 @@ public class DataSource {
         hikariConfig.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
 
         hikariConfig.setMaximumPoolSize(POOL_SIZE);
-        hikariConfig.setMinimumIdle(MIN_IDLE_TIME);
+//        hikariConfig.setMinimumIdle(MIN_IDLE_TIME);
 
         hikariDataSource = new HikariDataSource(hikariConfig);
     }
