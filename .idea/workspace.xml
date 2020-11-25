@@ -7,9 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9335710d-444e-4334-9eb3-cc670a5dc101" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SkiServerWar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SkiServerWar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SkierServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SkierServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/DataSource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -321,7 +318,7 @@
       <workItem from="1603742797201" duration="23790000" />
       <workItem from="1603907516356" duration="4797000" />
       <workItem from="1606021769297" duration="29544000" />
-      <workItem from="1606266815777" duration="1000000" />
+      <workItem from="1606266815777" duration="1028000" />
     </task>
     <servers />
   </component>
@@ -497,9 +494,10 @@
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="565" y="254" key="run.anything.popup/1792.23.2560.1417/0.23.1792.1052@0.23.1792.1052" timestamp="1606067384856" />
-    <state x="556" y="257" key="search.everywhere.popup" timestamp="1602218075479">
-      <screen x="0" y="23" width="1792" height="1054" />
+    <state x="2586" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1606280961519">
+      <screen x="1792" y="23" width="2560" height="1372" />
     </state>
     <state x="556" y="257" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1054@0.23.1792.1054" timestamp="1602218075479" />
+    <state x="2586" y="328" width="670" height="676" key="search.everywhere.popup/4352.23.1080.1897/1792.23.2560.1372/0.23.1792.1097@1792.23.2560.1372" timestamp="1606280961519" />
   </component>
 </project>
