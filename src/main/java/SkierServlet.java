@@ -34,6 +34,9 @@ public class SkierServlet extends HttpServlet {
     private final int GET_VERTICAL_MAX_ELEMENTS = 3;
     private final int MIN_NUM_ELEMENTS_IN_LIFTRIDES_ENDPOINT = 2;
     private int VERTICAL_MULTIPLIER = 10;
+
+    private static final String MSG_USERNAME = System.getProperty("MSG_USER");
+    private static final String MSG_PASSWORD = System.getProperty("MSG_PASS");
     private final String QUEUE_NAME_PERSISTENT = "SKIER_WRITE_QUEUE_PERSISTENT";
     private final String QUEUE_NAME_NOT_PERSISTENT = "SKIER_WRITE_QUEUE_NOT_PERSISTENT";
     private static final String HOST = "amqps://b-54863bfa-426a-425f-991b-9c83bd8fb830.mq.us-west-2.amazonaws.com:5671";
@@ -48,13 +51,12 @@ public class SkierServlet extends HttpServlet {
             ConnectionFactory connectionFactory = new ConnectionFactory();
             connectionFactory.setUri(HOST);
             connectionFactory.setPort(5671);
-            connectionFactory.setUsername("admin");
-            connectionFactory.setPassword("password12345");
+            connectionFactory.setUsername(MSG_USERNAME);
+            connectionFactory.setPassword(MSG_PASSWORD);
 
             queueConnection = connectionFactory.newConnection();
 
         } catch (Exception e) {
-            System.err.println("Unable to establish connection");
             e.printStackTrace();
         }
 
