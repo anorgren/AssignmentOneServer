@@ -20,6 +20,7 @@ public class DataSource {
     private static HikariDataSource hikariDataSource;
 
     static {
+
         hikariConfig.setJdbcUrl(DB_URL);
         hikariConfig.setUsername(DB_USERNAME);
         hikariConfig.setPassword(DB_PASSWORD);

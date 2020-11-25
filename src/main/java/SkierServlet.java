@@ -43,6 +43,7 @@ public class SkierServlet extends HttpServlet {
 
     public void init() throws ServletException {
         super.init();
+
         try {
             ConnectionFactory connectionFactory = new ConnectionFactory();
             connectionFactory.setUri(HOST);
@@ -51,23 +52,13 @@ public class SkierServlet extends HttpServlet {
             connectionFactory.setPassword("password12345");
 
             queueConnection = connectionFactory.newConnection();
+
         } catch (Exception e) {
             System.err.println("Unable to establish connection");
             e.printStackTrace();
         }
 
         channelPool = new GenericObjectPool<>(new ChannelFactory(QUEUE_NAME_NOT_PERSISTENT, queueConnection));
-    }
-
-    public void destroy() {
-        super.destroy();
-        try {
-            queueConnection.close();
-            channelPool.close();
-        } catch (Exception e) {
-            System.err.println("Unable to destroy");
-            e.printStackTrace();
-        }
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
@@ -221,6 +212,18 @@ public class SkierServlet extends HttpServlet {
             Gson gson = new Gson();
             res.setStatus(HttpServletResponse.SC_OK);
             res.getWriter().write(gson.toJson(skierVertical));
+        }
+    }
+
+    public void destroy() {
+        super.destroy();
+
+        try {
+            queueConnection.close();
+            channelPool.close();
+        } catch (Exception e) {
+            System.err.println("Unable to destroy");
+            e.printStackTrace();
         }
     }
 }
