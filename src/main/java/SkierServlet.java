@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 
 @WebServlet(name = "SkierServlet")
 public class SkierServlet extends HttpServlet {
+
     private final String POST_PATH_LIFTRIDES = "liftrides";
     private final String GET_PATH_DAY = "days";
     private final String GET_PATH_SKIERS = "skiers";
@@ -33,13 +34,10 @@ public class SkierServlet extends HttpServlet {
     private final int GET_VERTICAL_MAX_ELEMENTS = 3;
     private final int MIN_NUM_ELEMENTS_IN_LIFTRIDES_ENDPOINT = 2;
     private int VERTICAL_MULTIPLIER = 10;
-    private final String QUEUE_NAME_PERSISTENT = "SKIER_WRITE_QUEUE_PERSISTENT2";
+    private final String QUEUE_NAME_PERSISTENT = "SKIER_WRITE_QUEUE_PERSISTENT";
     private final String QUEUE_NAME_NOT_PERSISTENT = "SKIER_WRITE_QUEUE_NOT_PERSISTENT";
-    private static final String HOST = "amqps://b-e8c5ee0c-9e15-4aa0-b491-9fcbe7800bb5.mq.us-west-2.amazonaws.com:5671";
+    private static final String HOST = "amqps://b-54863bfa-426a-425f-991b-9c83bd8fb830.mq.us-west-2.amazonaws.com:5671";
 
-
-
-//    private final SkierDao skierDao = new SkierDao();
     private Connection queueConnection;
     private ObjectPool<Channel> channelPool;
 
@@ -112,7 +110,7 @@ public class SkierServlet extends HttpServlet {
                 liftRide.getResortID(),
                 liftRide.getDayID(),
                 liftRide.getSkierID(),
-                liftRide.getTime().substring(0, Math.min(liftRide.getTime().length(), 16)),
+                liftRide.getTime(),
                 liftRide.getLiftID(),
                 liftRide.getVertical());
     }
