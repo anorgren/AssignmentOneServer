@@ -12,16 +12,15 @@ public class DataSource {
 
     private static final String DB_USERNAME = System.getProperty("DB_USER");
     private static final String DB_PASSWORD = System.getProperty("DB_PASS");
-    private static final String DB_URL = System.getProperty("DB_URL");
+    private static final String READ_REP_DB_URL = System.getProperty("READ_REP_DB_URL");
     private static final String DB_DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
-    private static final int POOL_SIZE = 50;
+    private static final int POOL_SIZE = 20;
 
     private static HikariConfig hikariConfig = new HikariConfig();
     private static HikariDataSource hikariDataSource;
 
     static {
-
-        hikariConfig.setJdbcUrl(DB_URL);
+        hikariConfig.setJdbcUrl(READ_REP_DB_URL);
         hikariConfig.setUsername(DB_USERNAME);
         hikariConfig.setPassword(DB_PASSWORD);
 
